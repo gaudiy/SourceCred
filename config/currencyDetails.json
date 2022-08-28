@@ -1,4 +1,22 @@
 {
   "currencyName": "Grain",
-  "currencySuffix": " g"
+  "currencySuffix": " g",
+  "maxSimultaneousDistributions": 1,
+  "allocationPolicies": [
+    {
+      "budget": "250",
+      "numIntervalsLookback": 1,
+      "policyType": "IMMEDIATE"
+    },
+    {
+      "budget": "450",
+      "discount": 0.5,
+      "policyType": "RECENT"
+    },
+    {
+      "budget": "250",
+      "numIntervalsLookback": 0,
+      "policyType": "BALANCED"
+    }
+  ]
 }
